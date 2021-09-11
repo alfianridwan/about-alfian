@@ -872,6 +872,10 @@ video {
     max-width: 36rem;
   }
 
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
