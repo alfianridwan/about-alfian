@@ -4,6 +4,7 @@ window.addEventListener("load", function () {
   new fullpage("#fullpage", {
     autoScrolling: true,
     scrollHorizontally: true,
+    fadingEffect: true,
     navigation: true,
     navigationPosition: "right",
     onLeave: function (origin, destination, direction) {
