@@ -73,6 +73,11 @@
   font-style: normal;
 }
 
+html,
+body {
+  overflow-x: unset;
+}
+
 h1 {
   font-family: var(--font-display);
   line-height: 1.2 !important;
@@ -84,6 +89,11 @@ h4,
 h5,
 h6 {
   font-family: var(--font-header);
+  font-weight: 800;
+}
+
+h2 {
+  letter-spacing: -0.025em;
 }
 
 body,
@@ -92,4 +102,50 @@ p {
   font-weight: var(--default-weight);
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+  background: #ff8ca5;
+  transition: background 1s ease-out;
+}
+
+// .section:nth-child(1) {
+//   background: linear-gradient(270deg, #ef2d56, #ffc0ce);
+//   background-size: 400% 400%;
+
+//   animation: AnimationName 9s ease infinite;
+// }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-first,
+.animate-second {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 2000ms cubic-bezier(0.2, 0.8, 0.01, 1),
+    transform 2000ms cubic-bezier(0.2, 0.8, 0.01, 1);
+}
+
+.animate-first {
+  transition-delay: 100ms;
+}
+
+.animate-second {
+  transition-delay: 800ms;
+}
+
+.animate-first.appear,
+.animate-second.appear {
+  opacity: 1;
+  transform: translateY(0);
 }

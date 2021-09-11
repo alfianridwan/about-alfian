@@ -14,44 +14,50 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.11/tailwind.min.css"
     />
-    <link rel="stylesheet" href="../src/css/main-output.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
     />
-  </head> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/css/main-output.css" /> -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+  </head>
   <body>
-    <div id="fullpage">
+    <div id="fullpage" class="text-gray-900">
       <div class="section">
         <div class="flex items-center justify-center h-full w-screen">
           <div class="container px-4 mx-auto">
             <div class="flex flex-col">
-              <div class="hero-img-container mx-auto mb-8">
+              <div class="hero-img-container mx-auto mb-8 animate-first">
                 <picture>
                   <source
                     srcset="img/ar-portrait-square.webp"
                     type="image/webp"
-                    class="rounded-full xl:max-w-xl"
+                    class="rounded-full xl:max-w-xl max-h-80"
                   />
                   <source
                     srcset="img/ar-portrait-square.jpg"
                     type="image/jpeg"
-                    class="rounded-full xl:max-w-xl"
+                    class="rounded-full xl:max-w-xl max-h-80"
                   />
                   <img
                     src="img/ar-portrait-square.jpg"
-                    class="rounded-full xl:max-w-xl"
+                    class="rounded-full xl:max-w-xl max-h-80"
                   />
                 </picture>
               </div>
-              <div class="hero-intro">
+              <div class="hero-intro animate-second">
                 <h1 class="text-4xl xl:text-7xl text-center mb-4">
                   Hey there! <br />
                   I'm Alfian Ridwan.
                 </h1>
-                <p class="text-lg xl:text-2xl text-center">
-                  Born and raised in Singapore. Self-taught Web Designer and
-                  Developer since 2016.
+                <p class="text-lg xl:text-2xl text-center max-w-md mx-auto">
+                  Born and raised in Singapore. 23 this year! In this webpage
+                  you'll get to learn some (not-so) random facts about me.
                 </p>
               </div>
             </div>
@@ -62,10 +68,40 @@
         <div class="flex items-center justify-center h-full w-screen">
           <div class="container px-4 mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
-              <h2 class="text-4xl xl:text-6xl text-left mb-4">
-                Mass Communications graduate 👨‍🎓
-              </h2>
-              <div>
+              <div class="animate-first mt-0 xl:-mt-20">
+                <h4 class="uppercase tracking-widest mb-4 text-gray-500">
+                  Random Fact #1
+                </h4>
+                <h2 class="text-4xl xl:text-6xl text-left mb-4">
+                  Beliefs? Hobbies? Interests? What do you call <em>these</em>?
+                </h2>
+              </div>
+              <div class="animate-second mt-0 xl:mt-20">
+                <ul class="text-md xl:text-2xl list-disc list-inside mb-4">
+                  <li>Family and friends first!</li>
+                  <li>Work second-ish?</li>
+                  <li>A Typeface Enthusiast. Spent over $XXXX on fonts.</li>
+                  <li>Appreciates good design.</li>
+                  <li>Advocates the practice of self-learning.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section text-gray-50">
+        <div class="flex items-center justify-center h-full w-screen">
+          <div class="container px-4 mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
+              <div class="animate-first mt-0 xl:-mt-20">
+                <h4 class="uppercase tracking-widest mb-4 text-gray-150">
+                  Random Fact #2
+                </h4>
+                <h2 class="text-4xl xl:text-6xl text-left mb-4">
+                  Mass Communications <em>graduate</em> 👨‍🎓
+                </h2>
+              </div>
+              <div class="animate-second mt-0 xl:mt-20">
                 <p class="text-lg xl:text-2xl mb-4">
                   Graduated from Ngee Ann Polytechnic in 2018. Painfully learned
                   most of the media-related stuff:
@@ -77,9 +113,9 @@
                   <li>Specialised in Digital Media in final year.</li>
                 </ul>
                 <p class="text-lg xl:text-2xl">
-                  Interned in Jakarta, Indonesia, at an eCommerce startup:
-                  AsmaraKu (now known as Favo.id), as a UI/UX designer focusing
-                  on the Shopify storefront.
+                  6-months overseas internship @ AsmaraKu (now known as
+                  Favo.id), a Jakarta startup, as a UI/UX designer focusing on
+                  the Shopify storefront.
                 </p>
               </div>
             </div>
@@ -90,21 +126,137 @@
         <div class="flex items-center justify-center h-full w-screen">
           <div class="container px-4 mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
-              <h2 class="text-4xl xl:text-6xl text-left mb-4">
-                Freelanced with multiple companies across Singapore 📈
-              </h2>
-              <div>
+              <div class="animate-first mt-0 xl:-mt-20">
+                <h4 class="uppercase tracking-widest mb-4 text-gray-500">
+                  Random Fact #3
+                </h4>
+                <h2 class="text-4xl xl:text-6xl text-left mb-4">
+                  <em>Self-taught</em> Freelance Web Developer 📈
+                </h2>
+              </div>
+              <div class="animate-second mt-0 xl:mt-20">
                 <p class="text-lg xl:text-2xl mb-4">
-                  I worked with Think Tank Studios on a Learning Management
-                  System portal as well as digitalising their physical magazines
-                  right after I ORD from NS in late Oct 2020. Stopped working
-                  end of June 2021.
+                  Companies I've worked with:
                 </p>
+                <div class="grid grid-cols-4 gap-2 mb-6">
+                  <img src="img/company/logo-waistlab.png" />
+                  <img src="img/company/logo-singpost.png" />
+                  <img src="img/company/logo-tag.png" />
+                  <img src="img/company/logo-edb.png" />
+                  <img src="img/company/logo-fms.png" />
+                  <img src="img/company/logo-tts.png" />
+                  <img src="img/company/logo-bp.png" />
+                  <img src="img/company/logo-sot.png" />
+                </div>
                 <p class="text-lg xl:text-2xl mb-4">
-                  I specialise in Front End, layouting and creating easy-to-use
-                  and polished user interfaces. I can do from-scratch
-                  HTMl/CSS/JS websites or some clients prefer Webflow,
-                  WordPress, Shopify, Wix, Squarespace or EditorX CMS.
+                  I specialise in the Front End aspect of web development. I do
+                  both the UI/UX design as well as the coding. Most of my
+                  clients engage me to create websites with their preferred CMS,
+                  such as Webflow, WordPress, Shopify, Wix, Squarespace or
+                  EditorX.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section text-gray-50">
+        <div class="flex items-center justify-center h-full w-screen">
+          <div class="container px-4 mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
+              <div class="animate-first">
+                <h4 class="uppercase tracking-widest mb-4 text-gray-150">
+                  Random Fact #4
+                </h4>
+                <h2 class="text-4xl xl:text-6xl text-left mb-4">
+                  I <em>used</em> to play a lot. Now I only get played 😝
+                </h2>
+              </div>
+              <div class="animate-second">
+                <div class="grid grid-cols-4 gap-4">
+                  <img src="img/games/01-gba-bdaman.jpg" alt="" />
+                  <img src="img/games/01-gba-emerald.jpg" alt="" />
+                  <img src="img/games/01-gba-firered.jpg" alt="" />
+                  <img src="img/games/01-gba-platinum.jpg" alt="" />
+                </div>
+                <p class="text-md xl:text-lg mb-4">
+                  Also enjoyed the Super Mario, Tekken, and Yugioh series.
+                </p>
+                <div class="grid grid-cols-4 gap-4">
+                  <img src="img/games/02-psp-mhfu.jpg" alt="" />
+                  <img src="img/games/02-psp-ys7.jpg" alt="" />
+                  <img src="img/games/02-psp-ff7.jpg" alt="" />
+                  <img src="img/games/02-psp-kh.jpg" alt="" />
+                </div>
+                <p class="text-md xl:text-lg mb-4">
+                  Also enjoyed Phantasy Star Portable, Valhalla Knights, YS7,
+                  all the Yugioh, FIFA, PES, God of War, and Patapon series.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                  <img src="img/games/03-pc-blackshot.jpg" alt="" />
+                  <img src="img/games/03-pc-lol.jpg" alt="" />
+                  <img src="img/games/03-pc-skyrim.jpg" alt="" />
+                  <img src="img/games/03-pc-fm.jpg" alt="" />
+                </div>
+                <p class="text-md xl:text-lg mb-4">
+                  I estimate having ~2000+ hours on Skyrim and ~1500+ hours on
+                  the FM series.
+                </p>
+                <div class="grid grid-cols-4 gap-4">
+                  <img src="img/games/04-mv.png" alt="" />
+                  <img src="img/games/04-kh.png" alt="" />
+                  <img src="img/games/04-ml.png" alt="" />
+                  <img src="img/games/04-wr.png" alt="" />
+                </div>
+                <p class="text-md xl:text-lg mb-4">
+                  Maybe Genshin Impact soon?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section text-gray-50">
+        <div class="flex items-center justify-center h-full w-screen">
+          <div class="container px-4 mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
+              <div class="animate-first mt-0 xl:-mt-20">
+                <h4 class="uppercase tracking-widest mb-4 text-gray-150">
+                  Random Fact #5
+                </h4>
+                <h2 class="text-4xl xl:text-6xl text-left mb-4">
+                  Just <em>some</em> of my favorite movies, shows, animes 🎥
+                </h2>
+              </div>
+              <div class="animate-second mt-0 xl:mt-20">
+                <div class="grid grid-cols-4 gap-4">
+                  <img src="img/media/01-anime-naruto.jpg" alt="" />
+                  <img src="img/media/01-anime-aot.jpg" alt="" />
+                  <img src="img/media/01-anime-demonslayer.jpg" alt="" />
+                  <img src="img/media/01-anime-jjk.jpg" alt="" />
+                </div>
+                <p class="text-md xl:text-lg mb-4">
+                  Also love One Punch Man! Please recommend Anime thx
+                </p>
+                <div class="grid grid-cols-4 gap-4">
+                  <img src="img/media/02-tv-brba.jpg" alt="" />
+                  <img src="img/media/02-tv-friends.jpg" alt="" />
+                  <img src="img/media/02-tv-dark.jpg" alt="" />
+                  <img src="img/media/02-tv-moneyheist.jpg" alt="" />
+                </div>
+                <p class="text-md xl:text-lg mb-4">
+                  Also: Peaky Blinders, The Good Place, Vikings, Mr Robot, and
+                  all the Marvel TV shows so far
+                </p>
+                <div class="grid grid-cols-4 gap-4">
+                  <img src="img/media/03-movie.jpg" alt="" />
+                  <img src="img/media/03-movie-1.jpg" alt="" />
+                  <img src="img/media/03-movie-2.jpg" alt="" />
+                  <img src="img/media/03-movie-3.jpg" alt="" />
+                </div>
+                <p class="text-md xl:text-lg mb-4">
+                  Watched too many movies to list here. But these are probably
+                  one of the favourites that I can think of!
                 </p>
               </div>
             </div>
@@ -115,102 +267,70 @@
         <div class="flex items-center justify-center h-full w-screen">
           <div class="container px-4 mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
-              <h2 class="text-4xl xl:text-6xl text-left mb-4">
-                I used to play a lot. Now I only get played 😝
-              </h2>
-              <div>
+              <div class="animate-first mt-0 xl:-mt-20">
+                <h4 class="uppercase tracking-widest mb-4 text-gray-500">
+                  Random Fact #6
+                </h4>
+                <h2 class="text-4xl xl:text-6xl text-left mb-4">
+                  Aspirations and goals for the ✨<em>future</em>✨
+                </h2>
+              </div>
+              <div class="animate-second mt-0 xl:mt-20">
                 <p class="text-lg xl:text-2xl mb-4">
-                  Gameboy/DS Games: Pokemon
-                  FireRed/LeafGreen/Emerald/Platinum/BlackWhite
+                  I have entrepreneurial goals:
                 </p>
+                <ul class="text-md xl:text-2xl list-disc list-inside mb-4">
+                  <li>
+                    Digital agency specialising in interactive experiences
+                  </li>
+                  <li>B2B SaaS Company (Software-as-a-Service)</li>
+                  <li>Everyday Carry and Techwear Apparel</li>
+                  <li>Typeface foundry</li>
+                </ul>
                 <p class="text-lg xl:text-2xl mb-4">
-                  PSP Games: Phantasy Star Portable, Valhalla Knights, YS7,
-                  Monster Hunter Freedom Unite, Yugioh series, FIFA, PES, GTA
-                  Vice City/Liberty City, Metal Gear Solid Peace Walker, God of
-                  War Chains of Olympus, Patapon, FF7 Crisis Core, Dissidia,
-                  Kingdom Hearts
-                </p>
-                <p class="text-lg xl:text-2xl mb-4">
-                  PC Games: Sudden Attack, Blackshot, League of Legends, CS:GO,
-                  The Elder Scrolls V: Skyrim, Football Manager series
-                </p>
-                <p class="text-lg xl:text-2xl">
-                  Mobile Games: Monument Valley, Kingdom Rush series, Mobile
-                  Legends, League of Legends Wild Rift, Asphalt series, Maybe
-                  soon: Genshin Impact
+                  I also want to use my knowledge, experience, and financial
+                  freedom to help people who are in need, make a positive impact
+                  to the people and community around me, and help improve the
+                  world to be a better place.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section">
-        <div class="flex items-center justify-center h-full w-screen">
-          <div class="container px-4 mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
-              <h2 class="text-4xl xl:text-6xl text-left mb-4">
-                Just <em>some</em> of my favorite movies, shows, animes 🎥
-              </h2>
-              <div>
-                <p class="text-lg xl:text-2xl mb-4">
-                  Shows: FRIENDS, Money Heist, Peaky Blinders, Vikings, The Good
-                  Place
-                </p>
-                <p class="text-lg xl:text-2xl mb-4">
-                  Anime: JJK, Demon Slayer, OPM, AoT, Naruto
-                </p>
-                <p class="text-lg xl:text-2xl mb-4">
-                  PC Games: Sudden Attack, Blackshot, League of Legends, CS:GO,
-                  The Elder Scrolls V: Skyrim, Football Manager series
-                </p>
-                <p class="text-lg xl:text-2xl">
-                  Movies: The Shawshank Redemption, The Prestige, White Chicks,
-                  Shutter Island,
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <div class="flex items-center justify-center h-full w-screen">
-          <div class="container px-4 mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
-              <h2 class="text-4xl xl:text-6xl text-left mb-4">
-                Aspirations for the ✨<em>future</em>✨
-              </h2>
-              <div>
-                <p class="text-lg xl:text-2xl mb-4">
-                  I do want to start up my own business. I have a few plans,
-                  such as creating my own type foundry, digital agency focusing
-                  on interactive experiences, SaaS (software-as-a-service)
-                  business, EDC/techwear clothing.
-                </p>
-                <p class="text-lg xl:text-2xl mb-4">
-                  However, I don't mind working to gain some experience as well.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section">
+      <div class="section text-gray-50">
         <div class="flex items-center justify-center h-full w-screen">
           <div class="container px-4 mx-auto">
             <div class="flex flex-col">
-              <h2 class="text-4xl xl:text-6xl text-center mb-4">
-                Any questions❓ HMU.
+              <h2 class="text-4xl xl:text-6xl text-center mb-4 animate-first">
+                Any questions❓ Hit me up!
               </h2>
-              <p class="text-lg xl:text-2xl text-center mb-4">
-                Instagram: alfian.co
-                <br />
-                <br />
-                LinkedIn : /in/alfianridwan
-                <br />
-                <br />
-                Website: alfian.co (coming soon...by some miracle maybe I can
-                complete this by EOY)
-              </p>
+              <div class="grid grid-cols-4 gap-4 mx-auto max-w-xl text-center mt-12 animate-second">
+                <div>
+                  <a href="https://www.instagram.com/alfianco/" class="flex flex-col align-center items-center" target="_blank">
+                    <img src="img/icons/icon-ig.svg" alt="" width="32px" class="mb-2">
+                    <p>Instagram: alfian.co</p>
+                  </a>
+                </div>
+                <div>
+                  <a href="https://www.linkedin.com/in/alfianridwan" class="flex flex-col align-center items-center" target="_blank">
+                    <img src="img/icons/icon-li.svg" alt="" width="32px" class="mb-2">
+                    <p>LinkedIn: /in/alfianridwan</p>
+                  </a>
+                </div>
+                <div>
+                  <a href="https://alfian.co" class="flex flex-col align-center items-center" target="_blank">
+                    <img src="img/icons/icon-web.svg" alt="" width="32px" class="mb-2">
+                    <p>Website: alfian.co</p>
+                  </a>
+                </div>
+                <div>
+                  <a href="https://alfian.co" class="flex flex-col align-center items-center" target="_blank">
+                    <img src="img/icons/icon-envelope.svg" alt="" width="32px" class="mb-2">
+                    <p>Personal Email: hi[at]alfian[dot]co</p>
+                  </a>
+                </div>
+              </ul>
             </div>
           </div>
         </div>
@@ -218,12 +338,6 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
-    <script>
-      new fullpage("#fullpage", {
-        //options here
-        autoScrolling: true,
-        scrollHorizontally: true,
-      });
-    </script>
+    <script src="../src/js/main.js"></script>
   </body>
 </html>
