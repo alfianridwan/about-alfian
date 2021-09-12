@@ -539,10 +539,6 @@ video {
  * Ensure the default browser behavior of the `hidden` attribute.
  */
 
-[hidden] {
-  display: none;
-}
-
 *, ::before, ::after {
   --tw-border-opacity: 1;
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
@@ -623,10 +619,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-full {
@@ -864,9 +856,6 @@ video {
 }
 
 @media (min-width: 992px) {
-  .lg\:block {
-    display: block;
-  }
 }
 
 @media (min-width: 1280px) {
