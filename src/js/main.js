@@ -39,7 +39,7 @@ window.addEventListener("load", function () {
   const fadeSecond = document.querySelectorAll(".animate-second");
 
   const appearOptions = {
-    threshold: 1,
+    threshold: 0.4,
   };
 
   const appearOnScroll = new IntersectionObserver(function (
