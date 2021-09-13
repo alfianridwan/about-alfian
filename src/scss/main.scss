@@ -106,7 +106,11 @@ p {
 
 body {
   background: #ff8ca5;
-  transition: background 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+#fullpage .section {
+  height: 100vh;
 }
 
 // .section:nth-child(1) {

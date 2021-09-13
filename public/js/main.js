@@ -4,8 +4,6 @@ window.addEventListener("load", function () {
   new fullpage("#fullpage", {
     autoScrolling: true,
     scrollHorizontally: true,
-    navigation: true,
-    navigationPosition: "right",
     onLeave: function (origin, destination, direction) {
       if (destination.index == 0) {
         body.style.background = "#FF8CA5";
@@ -15,6 +13,10 @@ window.addEventListener("load", function () {
       }
       if (destination.index == 2) {
         body.style.background = "#860070";
+        // body.style.background = "url('img/asmaraku.jpg')";
+        // body.style.backgroundSize = "cover";
+        // body.style.backgroundPosition = "center center";
+        // body.style.backdropFilter = "blur(50px)";
       }
       if (destination.index == 3) {
         body.style.background = "#b8ffc2";
@@ -38,7 +40,7 @@ window.addEventListener("load", function () {
   const fadeSecond = document.querySelectorAll(".animate-second");
 
   const appearOptions = {
-    threshold: 1,
+    threshold: 0.2,
   };
 
   const appearOnScroll = new IntersectionObserver(function (
