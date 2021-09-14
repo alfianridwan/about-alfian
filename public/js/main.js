@@ -6,31 +6,34 @@ window.addEventListener("load", function () {
     scrollHorizontally: true,
     onLeave: function (origin, destination, direction) {
       if (destination.index == 0) {
-        body.style.background = "#FF8CA5";
+        body.style.background = "#FFFFFF";
       }
       if (destination.index == 1) {
-        body.style.background = "#fdff82";
+        body.style.background = "#FF8CA5";
       }
       if (destination.index == 2) {
-        body.style.background = "#860070";
+        body.style.background = "#fdff82";
         // body.style.background = "url('img/asmaraku.jpg')";
         // body.style.backgroundSize = "cover";
         // body.style.backgroundPosition = "center center";
         // body.style.backdropFilter = "blur(50px)";
       }
       if (destination.index == 3) {
-        body.style.background = "#b8ffc2";
+        body.style.background = "#860070";
       }
       if (destination.index == 4) {
-        body.style.background = "#F75C03";
+        body.style.background = "#b8ffc2";
       }
       if (destination.index == 5) {
-        body.style.background = "#0c140d";
+        body.style.background = "#F75C03";
       }
       if (destination.index == 6) {
-        body.style.background = "#FFD8BE";
+        body.style.background = "#0c140d";
       }
       if (destination.index == 7) {
+        body.style.background = "#FFD8BE";
+      }
+      if (destination.index == 8) {
         body.style.background = "#020914";
       }
     },
